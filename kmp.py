@@ -6,7 +6,6 @@ def compute_lps_array(pattern):
     prefix_last_matched_idx = 0
     i = 1
     while i < len(pattern):
-        print(i)
         if pattern[i] == pattern[prefix_last_matched_idx]:
             prefix_last_matched_idx += 1
             lps.append(prefix_last_matched_idx)
